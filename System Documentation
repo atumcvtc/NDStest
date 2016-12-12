@@ -1,0 +1,12 @@
+How to create a database with test info within mysql:
+
+Open the terminal.
+  Create an .sql file with test information that we want to fill our database tables with.
+  
+Go into mysql with the command mysql -u root -p
+  Create the database by using the command 'create database *'. (* being the database name)
+    Get into the database by using the command 'use *'.
+    
+Use the command mysql -u root -p < /*/*/* to run the script. (/*/*/* being the path of the .sql file)
+
+Created backups using the command mysqldump -d mysql -u root -p > mysql-full-backup.sql
